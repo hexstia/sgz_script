@@ -1,0 +1,3104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1084</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>1</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>三国志·战略版-半自动化铺路脚本v1.2</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>坐标 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string> X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x">
+       <property name="inputMethodHints">
+        <set>Qt::ImhDigitsOnly</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_63">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_0">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_0">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_12">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_15">
+     <item>
+      <widget class="QLabel" name="label_40">
+       <property name="text">
+        <string>设备状态：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="dev_status"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_flush">
+       <property name="text">
+        <string>刷新</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_13">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>60</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_16">
+     <item>
+      <widget class="QLabel" name="label_43">
+       <property name="text">
+        <string>手机尺寸 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_44">
+       <property name="text">
+        <string> X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="dev_x"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_45">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="dev_y"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_14">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>100</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_17">
+     <item>
+      <widget class="QLabel" name="label_41">
+       <property name="text">
+        <string>投屏设备 像素：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="dev_size"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btn_scrcpy">
+       <property name="text">
+        <string>投屏</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="btn_start_exec">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>500</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>开始执行</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_stop_exec">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>500</y>
+      <width>81</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>停止执行</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>坐标1 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_1"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_1"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_64">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_1"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb1">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk1">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_1">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_1">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string>坐标2 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_14">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_2"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_15">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_2"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_65">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_2"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb2">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk2">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_2">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_2">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>200</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QLabel" name="label_16">
+       <property name="text">
+        <string>坐标5 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_5"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_5"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_66">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_5"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb5">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk5">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_5">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_5">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_8">
+     <item>
+      <widget class="QLabel" name="label_19">
+       <property name="text">
+        <string>坐标3 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_20">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_3"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_21">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_3"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_67">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_3"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb3">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk3">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_3">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_3">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_6">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>160</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QLabel" name="label_22">
+       <property name="text">
+        <string>坐标4 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_23">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_4"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_24">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_4"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_68">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_4"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb4">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk4">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_4">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_4">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>320</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <widget class="QLabel" name="label_25">
+       <property name="text">
+        <string>坐标8 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_26">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_8"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_27">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_8"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_69">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_8"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb8">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk8">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_8">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_8">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>400</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_11">
+     <item>
+      <widget class="QLabel" name="label_28">
+       <property name="text">
+        <string>坐标10</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_29">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_10"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_30">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_10"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_70">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_10"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb10">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk10">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_10">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_10">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_9">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>360</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_12">
+     <item>
+      <widget class="QLabel" name="label_31">
+       <property name="text">
+        <string>坐标9 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_32">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_9"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_33">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_9"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_71">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_9"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb9">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk9">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_9">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_9">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_10">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>440</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_13">
+     <item>
+      <widget class="QLabel" name="label_34">
+       <property name="text">
+        <string>坐标11</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_35">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_11"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_36">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_11"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_72">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_11"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb11">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk11">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_11">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_11">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_11">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>240</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_14">
+     <item>
+      <widget class="QLabel" name="label_37">
+       <property name="text">
+        <string>坐标6 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_38">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_6"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_39">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_6"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_73">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_6"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb6">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk6">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_6">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_6">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_21">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>280</y>
+      <width>651</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_24">
+     <item>
+      <widget class="QLabel" name="label_74">
+       <property name="text">
+        <string>坐标7 </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_75">
+       <property name="text">
+        <string>X ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_x_7"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_76">
+       <property name="text">
+        <string> Y ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_pos_y_7"/>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_77">
+       <property name="text">
+        <string>执行(s)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_delay_7"/>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cbb7">
+       <property name="minimumSize">
+        <size>
+         <width>90</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>攻占（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（新）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>攻占（敌）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>行军（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（己）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>扫荡（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>屯田（已）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（营）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>调动（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>驻守（盟）</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>回城</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_qk7">
+       <property name="minimumSize">
+        <size>
+         <width>80</width>
+         <height>0</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>无</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>快速分兵5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_select_7">
+       <item>
+        <property name="text">
+         <string>部队选1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队选5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="cb_sum_7">
+       <item>
+        <property name="text">
+         <string>部队总1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总3</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总4</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>部队总5</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_22">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>140</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_25">
+     <item>
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_78">
+       <property name="text">
+        <string>开始执行前等待时间(s) ：</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="et_before_delay"/>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>540</y>
+      <width>661</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>使用前，请查看《使用说明》文档！！</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>640</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>剩余时长：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lab_day">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>640</y>
+      <width>381</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>28</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>250</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1 .队伍会选择离坐标最近的队伍，如果出发地队伍多，则选择中</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>280</y>
+      <width>381</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>间的队伍进行操作。请各位主公，排好顺序，作者会尽快完善该功能</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>310</y>
+      <width>361</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2. 坐标上的执行(s)，在点击(开始执行)按钮之后，等待多久时间</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>340</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>之后，才开始执行该坐标， 单位为秒</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>380</y>
+      <width>401</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3.选项卡 该坐标的地为 新：无主之地 敌：敌对之地 已：自己之地 盟：</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>420</y>
+      <width>341</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>盟友之地  营：自己营帐</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>180</y>
+      <width>331</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>坚持出征（系统提示：当前攻占，损失较大）</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>210</y>
+      <width>331</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>注意坚持出征，可能会出现平局情况，会使脚本节奏乱掉</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1084</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>三国志</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
